@@ -1,12 +1,11 @@
-package springcloud.controller;
+package com.springcloud.controller;
 
 import com.springcloud.entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-import springcloud.service.ProductClientService;
+import com.springcloud.service.ProductClientService;
 
 import java.util.List;
 

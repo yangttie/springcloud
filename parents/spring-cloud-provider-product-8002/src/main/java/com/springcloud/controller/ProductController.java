@@ -1,7 +1,7 @@
 package com.springcloud.controller;
 
-import com.mengxuegu.springcloud.service.ProductService;
 import com.springcloud.entities.Product;
+import com.springcloud.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

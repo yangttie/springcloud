@@ -1,4 +1,4 @@
-package com.mengxuegu.springcloud.service;
+package com.springcloud.service;
 
 
 import com.springcloud.entities.Product;

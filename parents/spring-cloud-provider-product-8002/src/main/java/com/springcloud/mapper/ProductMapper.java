@@ -1,4 +1,4 @@
-package com.mengxuegu.springcloud.mapper;
+package com.springcloud.mapper;
 
 import com.springcloud.entities.Product;
 

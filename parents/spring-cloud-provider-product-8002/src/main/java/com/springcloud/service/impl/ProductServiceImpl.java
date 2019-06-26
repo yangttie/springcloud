@@ -1,18 +1,18 @@
-package com.mengxuegu.springcloud.service.impl;
+package com.springcloud.service.impl;
 
-import com.mengxuegu.springcloud.mapper.ProductMapper;
-import com.mengxuegu.springcloud.service.ProductService;
 import com.springcloud.entities.Product;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.springcloud.mapper.ProductMapper;
+import com.springcloud.service.ProductService;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired
+    @Resource
     ProductMapper productMapper;
 
     @Override
