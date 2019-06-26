@@ -15,6 +15,8 @@
         <module>spring-cloud-consumer-product-feign</module>
         <module>spring-cloud-eureka-6001</module>
         <module>spring-cloud-eureka-6002</module>
+        <module>spring-cloud-provider-product-hystrix-8001</module>
+        <module>spring-cloud-hystrix-dashboard-9001</module>
     </modules>
 
     <packaging>pom</packaging>

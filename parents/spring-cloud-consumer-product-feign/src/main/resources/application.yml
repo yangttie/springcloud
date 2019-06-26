@@ -1,7 +1,10 @@
 server:
   port: 80
 
-
+# 需要开启 hystrix
+feign:
+  hystrix:
+    enabled: true
 eureka:
   client:
     registerWithEureka: false # 服务注册，false表示不将本消费者注册到 Eureka 服务器

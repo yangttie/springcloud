@@ -1,8 +1,12 @@
 package com.springcloud.service;
 
 import com.springcloud.entities.Product;
+import com.springcloud.service.impl.ProductClientServiceFallBack;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -11,8 +15,8 @@ import java.util.List;
  * @version 1.0
  * @date 2019/6/26 0:18
  */
-@FeignClient(value = "spring-cloud-product") //指定调用的微服务名称:  http://spring-cloud-product/product/add
-
+//指定调用的微服务名称:  http://spring-cloud-product/product/add
+@FeignClient(value = "spring-cloud-product", fallback = ProductClientServiceFallBack.class)
 public interface ProductClientService {
 
     @PostMapping("/product/add")

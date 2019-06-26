@@ -9,9 +9,7 @@ import com.springcloud.service.ProductClientService;
 
 import java.util.List;
 
-/**
- * @Auther: 梦学谷
- */
+
 @RestController
 public class ProductController_Consumer {
 
