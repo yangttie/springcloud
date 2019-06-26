@@ -1,0 +1,7 @@
+##################这个配置文件的端口最终不会生效   最终使用的是bootstrap.yml 中从github上面获取的
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-cloud-config-client

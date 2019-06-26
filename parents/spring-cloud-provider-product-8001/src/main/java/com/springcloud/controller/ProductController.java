@@ -4,16 +4,25 @@ package com.springcloud.controller;
 import com.springcloud.entities.Product;
 import com.springcloud.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@RefreshScope //刷新配置
 @RestController
 public class ProductController {
 
     @Autowired
     private ProductService productService;
+    @Value("${emp.name}")
+    private String name;
+
+    @GetMapping("/hello")
+    public String hello() {
+        return name;
+    }
 
     @RequestMapping(value = "/product/add", method = RequestMethod.POST)
     public boolean add(@RequestBody Product product) {

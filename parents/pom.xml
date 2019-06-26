@@ -17,6 +17,9 @@
         <module>spring-cloud-eureka-6002</module>
         <module>spring-cloud-provider-product-hystrix-8001</module>
         <module>spring-cloud-hystrix-dashboard-9001</module>
+        <module>spring-cloud-zuul-gateway-7001</module>
+        <module>spring-cloud-config-server-5001</module>
+        <module>spring-cloud-config-client-8080</module>
     </modules>
 
     <packaging>pom</packaging>
